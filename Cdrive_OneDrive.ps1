@@ -10,7 +10,7 @@ $OneDrive = "Env:OneDrive"
 # Running a loop that'll iterate through each of the directories and the values
 ForEach ($dir in $Main_dir.GetEnumerator()) {
     $sources = $dir.Value  # The sources that are moving are the values within the three main directories above
-    $destination = "$OneDrive\$(dir.Key)"  # The final destination is going to be at OneDrive (Key = label of )
+    $destination = "$OneDrive\$($dir.Key)"  # The final destination is going to be at OneDrive (Key = label of )
 }
 
 # Initiating Robocopy with "Start-Process" cmdlet to my script

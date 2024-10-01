@@ -13,5 +13,5 @@ ForEach ($dir in $Main_dir.GetEnumerator()) {
     $destination = "$OneDrive\$($dir.Key)"  # The final destination is going to be at OneDrive (Key = label of )
 
 # Initiating Robocopy with "Start-Process" cmdlet to my script
-    & Robocopy "$sources" "$destination" /e /copyall  # Utilizing Robocopy like '/e' copies all subdirectories including empty ones, '/copyall/ ensures all file information is copied
+    & Robocopy "$sources" "$destination" /s /copyall  # Utilizing Robocopy like '/s' copies all subdirectories but not empty ones, '/copyall/ ensures all file information is copied
 }

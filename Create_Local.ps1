@@ -1,4 +1,4 @@
-## Create Local Admin for all of the TBGKnaack setups
+## Create Local Admin for all of the TBGKnaack setups. Needs to be done to since the setups are azure joined.
 
 # Configure profiles needed
 $UserName = "TBGKnaack"

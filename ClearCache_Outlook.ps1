@@ -1,0 +1,1 @@
+Remove-Item -Path "$env:LocalAppData\Packages\Microsoft.OutlookForWindows_8wekyb3d8bbwe\LocalCache" -Recurse -Force
